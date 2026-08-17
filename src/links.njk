@@ -1,0 +1,13 @@
+---
+title: External Links
+permalink: /links/
+layout: layouts/page.njk
+eleventyNavigation:
+  key: External Links
+  order: 32
+intro: A directory of APRS applications, resources, and hardware/equipment links.
+---
+<p>A longer directory of external links, covering APRS applications, general resources, and hardware &amp; equipment. Many of these are long-standing links from the amateur radio and APRS community.</p>
+
+{% set linkGroups = externalLinks %}
+{% include "components/link-list.njk" %}

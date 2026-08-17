@@ -1,0 +1,30 @@
+---
+title: WIDEn-N Digipeater
+permalink: /widen-n-digipeater/
+eleventyNavigation:
+  key: WIDEn-N Digipeater
+  parent: Station Configuration
+  order: 3
+intro: Configuration guidance for a Kantronics KPC-3 / KPC-3+ WIDEn-N digipeater.
+paramCaption: Suggested KPC-3+ digipeater parameters
+paramTable:
+  - param: MYCALL
+    value: "N0CALL-10"
+    note: Use your callsign with an appropriate SSID; avoid duplicating an alias already in use elsewhere.
+  - param: DIGIPEAT
+    value: "ON"
+    note: Enables WIDEn-N digipeating.
+  - param: MAILBOX / connected packet
+    value: "OFF"
+    note: Disabled to keep the digipeater dedicated to APRS traffic.
+  - param: "E (beacon interval)"
+    value: "10"
+    note: Enables a station beacon every 10 minutes, identifying the digipeater's location.
+notes:
+  - "This page covers Kantronics KPC-3 / KPC-3+ TNCs, historically the most common hardware for regional digipeaters."
+  - "Stagger multiple BLT (beacon location text) entries so nearby digipeaters aren't transmitting at the same moment."
+  - "Setting up a new area digipeater requires authorized site access, appropriate antenna/coax/power/filters, and a unique alias — coordinate before going on the air."
+---
+<p>WIDEn-N digipeaters are the backbone of regional APRS coverage — typically mountaintop or otherwise high-elevation stations that relay traffic across a wide area.</p>
+
+<p>This page covers recommended configuration parameters. For a digipeater that also reports weather data, see <a href="/widen-n-wx-digi/" class="text-signal-600 underline underline-offset-2 hover:text-signal-500">WIDEn-N/WX Digi</a>. For lower-power local coverage, see <a href="/fill-in-digi/" class="text-signal-600 underline underline-offset-2 hover:text-signal-500">Fill-In Digi</a>.</p>

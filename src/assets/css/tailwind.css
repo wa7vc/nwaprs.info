@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------- */
+/* Self-hosted fonts (Fontsource files, passthrough-copied by        */
+/* eleventy.config.js into _site/assets/fonts/<font>/files/...)      */
+/* ---------------------------------------------------------------- */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/inter/files/inter-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter/files/inter-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter/files/inter-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter/files/inter-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/vt323/files/vt323-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/press-start-2p/files/press-start-2p-latin-400-normal.woff2")
+    format("woff2");
+}
+
+/* ---------------------------------------------------------------- */
+/* Design tokens                                                     */
+/* ---------------------------------------------------------------- */
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Press Start 2P", ui-monospace, monospace;
+  --font-terminal: "VT323", ui-monospace, monospace;
+
+  /* dark "console" zones: header / hero / footer */
+  --color-night-950: #0a0e17;
+  --color-night-900: #111a2b;
+  --color-night-800: #1a2740;
+
+  /* primary brand accent - signal teal/cyan */
+  --color-signal-400: #22d3ee;
+  --color-signal-500: #14b8c4;
+  --color-signal-600: #0e8a94;
+  --color-signal-700: #0b6b73;
+
+  /* secondary accent - beacon amber */
+  --color-beacon-400: #fbbf24;
+  --color-beacon-500: #f59e0b;
+  --color-beacon-600: #b45309;
+  --color-beacon-700: #92400e;
+
+  --animate-beacon-pulse: beacon-pulse 2.2s ease-out infinite;
+
+  @keyframes beacon-pulse {
+    0% {
+      box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-beacon-500) 55%, transparent);
+    }
+    70% {
+      box-shadow: 0 0 0 0.6rem color-mix(in oklab, var(--color-beacon-500) 0%, transparent);
+    }
+    100% {
+      box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-beacon-500) 0%, transparent);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-beacon-pulse {
+    animation: none;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Retro component layer                                             */
+/* ---------------------------------------------------------------- */
+
+@layer components {
+  /* CRT scanline overlay - applied to the home hero only, static (no motion) */
+  .crt-scanlines {
+    position: relative;
+    isolation: isolate;
+  }
+  .crt-scanlines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      color-mix(in oklab, white 6%, transparent) 0px,
+      color-mix(in oklab, white 6%, transparent) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "category": "About NWAPRS",
+    "question": "What area does NWAPRS serve?",
+    "answer": "NWAPRS serves Alberta, British Columbia, the Northwest Territories, Washington, Oregon, Idaho, and Montana. Development started in 1996 around Spokane and Vancouver, and the interstate corridors I-5, I-90, and I-84 now have solid digipeater networks."
+  },
+  {
+    "category": "Frequencies",
+    "question": "What frequencies does APRS use in this region?",
+    "answer": "The primary North America APRS frequency is 144.390 MHz. APRS also operates on HF at 10.151 MHz LSB and 28.120 MHz USB. In the Puget Sound area there are alternate frequencies at 144.35 MHz and 440.800 MHz at 9600 baud."
+  },
+  {
+    "category": "Settings",
+    "question": "What path should I use on a mobile tracker?",
+    "answer": "Use WIDE1-1,WIDE2-1 for all mobile trackers, or WIDE2-2 only for higher-power mobiles. Transmit no more than once per minute, and turn your tracker off when the vehicle isn't in use."
+  },
+  {
+    "category": "Settings",
+    "question": "What path should I use on a home station?",
+    "answer": "Use WIDE2-2 for all fixed stations, or WIDE1-1,WIDE2-1 if you're unable to reach a WIDEn-N digipeater directly."
+  },
+  {
+    "category": "Settings",
+    "question": "How often should my station transmit?",
+    "answer": "Home stations should transmit a position roughly every 30 minutes. Mobile stations should transmit every 1-3 minutes depending on path length."
+  },
+  {
+    "category": "Settings",
+    "question": "Should I use APRS software or a basic packet program to configure my TNC?",
+    "answer": "Use a basic packet program rather than APRS software to configure your TNC, to avoid configuration file conflicts when the APRS software shuts down."
+  },
+  {
+    "category": "About NWAPRS",
+    "question": "Where can I find more information?",
+    "answer": "This website, nwaprs.info, is the primary source for regional APRS information."
+  },
+  {
+    "category": "Map symbols",
+    "question": "What do the blue circles with lines mean on the map?",
+    "answer": "Blue circles with lines indicate stations with an integrated weather station. The line's direction shows the wind's origin, and its length indicates wind speed."
+  },
+  {
+    "category": "Map symbols",
+    "question": "What do the lines coming from car symbols mean?",
+    "answer": "Lines from vehicle symbols show heading, derived from GPS data. Longer lines indicate faster speeds."
+  },
+  {
+    "category": "Map symbols",
+    "question": "What do green stars represent?",
+    "answer": "Green stars represent remote WIDEn-N digipeaters, typically located on mountaintops, offering long-range coverage."
+  },
+  {
+    "category": "Setting up a digipeater",
+    "question": "What do I need to set up an area digipeater?",
+    "answer": "You'll need authorized site access, a Kantronics KPC-3+ (or similar), an appropriate antenna, coax, a power supply, and filters. Use a geographical name or a -10 SSID, and verify the alias name isn't already in use elsewhere in the world."
+  },
+  {
+    "category": "Equipment",
+    "question": "What equipment do I need for a mobile tracker?",
+    "answer": "You'll need a 2M mobile radio, a TNC, and a GPS. A Kantronics KPC-3+ is recommended; TinyTrak and TigerTrak are common alternatives. The Kenwood TM-D710AG is considered an all-in-one solution with everything built in."
+  },
+  {
+    "category": "Equipment",
+    "question": "Does my computer need to be powerful to run APRS software?",
+    "answer": "No — practically any computer works, though newer hardware will of course run faster. APRS client software is available for a wide range of operating systems."
+  },
+  {
+    "category": "Equipment",
+    "question": "Is APRS software expensive?",
+    "answer": "Nearly all popular APRS clients are shareware, available for download online. Donations to developers are encouraged. To uplink to APRS-IS over the internet you'll also need a five-digit APRS-IS passcode for your callsign."
+  },
+  {
+    "category": "Equipment",
+    "question": "Is there a handheld radio with a built-in TNC?",
+    "answer": "The Kenwood TH-D74 has packet/APRS capability built in (around $500), though production was halted after a 2020 fire at a Japanese Kenwood facility. APRSdroid is also available for Android phones as a software-only option."
+  },
+  {
+    "category": "Equipment",
+    "question": "What mobile radio has a built-in TNC and GPS?",
+    "answer": "The Kenwood TM-D710AG is recommended. Alinco and Yaesu also offer alternatives with similar capability."
+  },
+  {
+    "category": "Settings",
+    "question": "Should I leave my home station's TNC on?",
+    "answer": "Yes — leaving your TNC on lets your home station provide fill-in digipeating using the WIDE1-1,WIDEn-N path, which helps low-power portable and mobile stations reach the wider network."
+  },
+  {
+    "category": "About NWAPRS",
+    "question": "How does the internet gateway system work?",
+    "answer": "Multiple locations feed received radio signals via computer up to the national APRS-IS server network. It's estimated that roughly 90% of APRS traffic is received through internet gateways rather than pure RF paths."
+  },
+  {
+    "category": "Settings",
+    "question": "What is the 'Top 200 heard stations' list for?",
+    "answer": "It lists the most-active stations on the network. If your station appears in the top 3-5, it's a sign you're over-transmitting and should revisit your beacon interval and path settings."
+  },
+  {
+    "category": "About NWAPRS",
+    "question": "Can non-hams track someone's location online?",
+    "answer": "Yes, if they know the exact callsign and SSID, they can view a station's position at map.findu.com/callsign-ssid or on aprs.fi."
+  },
+  {
+    "category": "Equipment",
+    "question": "What is the Kenwood voice chip?",
+    "answer": "The Kenwood VS-3 and VGS-1 voice chips let compatible radios speak received APRS messages aloud. Contact a Kenwood dealer for details and compatibility."
+  },
+  {
+    "category": "Equipment",
+    "question": "What TNC should I use with a laptop for mobile tracking?",
+    "answer": "Laptop-based mobile setups should use a Kantronics KPC-3+. If you just need transmit-only tracking, the TigerTrak, TinyTrak3+/4, and OpenTracker are common lighter-weight options."
+  },
+  {
+    "category": "About NWAPRS",
+    "question": "Where can I get more help?",
+    "answer": "Look for local APRS experts, check statewide amateur radio resources, be patient with the learning curve, and consider joining the NWAPRS mailing list on Google Groups."
+  }
+]

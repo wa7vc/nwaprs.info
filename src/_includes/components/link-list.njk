@@ -1,0 +1,21 @@
+{#
+  Renders a categorized link directory, e.g. _data/resourceLinks.json or
+  _data/externalLinks.json. Usage: pass `linkGroups` in scope.
+#}
+{% for group in linkGroups %}
+  <section class="mb-8">
+    <h2 class="mb-3 text-xs font-bold uppercase tracking-widest text-signal-700">{{ group.category }}</h2>
+    <ul class="grid gap-2 sm:grid-cols-2">
+      {% for link in group.links %}
+        <li class="rounded-lg border border-slate-200 px-4 py-2.5">
+          <a href="{{ link.url }}" class="font-medium text-signal-600 underline decoration-signal-500/40 underline-offset-2 hover:text-signal-500" rel="noopener" target="_blank">
+            {{ link.label }}
+          </a>
+          {% if link.description %}
+            <p class="mt-0.5 text-sm text-slate-600">{{ link.description }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

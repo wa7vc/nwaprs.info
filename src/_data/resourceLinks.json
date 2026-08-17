@@ -1,0 +1,34 @@
+[
+  {
+    "category": "APRS Clients",
+    "links": [
+      { "label": "APRSISCE/32", "url": "http://aprsisce.wikidot.com/", "description": "Full-featured Windows APRS client." },
+      { "label": "YAAC", "url": "https://www.ka2ddo.org/ka2ddo/YAAC.html", "description": "Cross-platform Java APRS client." },
+      { "label": "PinPointAPRS", "url": "https://pinpointaprs.com", "description": "Windows APRS mapping client." },
+      { "label": "UI-View32", "url": "http://www.uiview.net", "description": "Classic Windows APRS client." },
+      { "label": "SARTrack", "url": "https://www.sartrack.co.nz/", "description": "APRS/tracking client popular with search & rescue teams." },
+      { "label": "Xastir", "url": "http://www.xastir.org", "description": "Open-source APRS client for Linux." },
+      { "label": "APRSdroid", "url": "http://aprsdroid.org", "description": "APRS client for Android." }
+    ]
+  },
+  {
+    "category": "TNCs and Radios",
+    "links": [
+      { "label": "Kantronics", "url": "http://www.kantronics.com", "description": "Maker of the KPC-3/KPC-3+ TNCs widely used for NWAPRS digipeaters." },
+      { "label": "Kenwood", "url": "http://www.kenwoodusa.com", "description": "Maker of the TM-D710 and TH-D74 APRS-capable radios." },
+      { "label": "Yaesu", "url": "https://www.yaesu.com", "description": "Amateur radio manufacturer with APRS-capable models." },
+      { "label": "Byonics", "url": "http://www.byonics.com", "description": "Maker of TinyTrak tracker boards." },
+      { "label": "QRP Labs", "url": "https://qrp-labs.com", "description": "Low-power radio and tracker kits." }
+    ]
+  },
+  {
+    "category": "Other Resources",
+    "links": [
+      { "label": "APRS.fi", "url": "https://aprs.fi", "description": "Live APRS station tracking map." },
+      { "label": "APRSDirect.com", "url": "https://aprsdirect.com", "description": "Another live APRS tracking map." },
+      { "label": "APRS.org", "url": "http://www.aprs.org", "description": "The official APRS protocol site, maintained by Bob Bruninga, WB4APR." },
+      { "label": "r/APRS on Reddit", "url": "https://www.reddit.com/r/APRS/", "description": "Community discussion and troubleshooting." },
+      { "label": "Winlink and APRS interoperability", "url": "https://winlink.org", "description": "Notes on using Winlink alongside APRS." }
+    ]
+  }
+]

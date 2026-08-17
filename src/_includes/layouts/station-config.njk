@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+---
+<article class="mx-auto max-w-3xl px-4 py-10">
+  <header class="mb-8">
+    <p class="text-xs font-bold uppercase tracking-widest text-signal-700">Station Configuration</p>
+    <h1 class="font-display text-2xl leading-relaxed text-night-950 sm:text-3xl">{{ title }}</h1>
+    {% if intro %}
+      <p class="mt-4 text-lg text-slate-600">{{ intro }}</p>
+    {% endif %}
+  </header>
+
+  <div class="prose-content space-y-4">
+    {{ content | safe }}
+  </div>
+
+  {% if paramTable %}
+    <section class="mt-8">
+      <h2 class="mb-3 text-xs font-bold uppercase tracking-widest text-signal-700">Suggested Parameters</h2>
+      {% set rows = paramTable %}
+      {% set caption = paramCaption %}
+      {% include "components/info-table.njk" %}
+    </section>
+  {% endif %}
+
+  {% if beaconTable %}
+    <section class="mt-8">
+      <h2 class="mb-3 text-xs font-bold uppercase tracking-widest text-signal-700">Beacon Timing</h2>
+      {% set rows = beaconTable %}
+      {% set caption = beaconCaption %}
+      {% include "components/info-table.njk" %}
+    </section>
+  {% endif %}
+
+  {% if notes %}
+    <section class="mt-8 rounded-lg border border-beacon-500/30 bg-beacon-500/5 p-4">
+      <h2 class="mb-2 text-xs font-bold uppercase tracking-widest text-beacon-700">Notes</h2>
+      <ul class="list-disc space-y-1 pl-5 text-slate-700">
+        {% for note in notes %}
+          <li>{{ note }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+</article>

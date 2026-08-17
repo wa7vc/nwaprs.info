@@ -1,0 +1,22 @@
+{#
+  Renders _data/faq.json as an accessible, JS-free accordion grouped by
+  category, using native <details>/<summary>.
+#}
+{% for category in faqCategories %}
+  <section class="mb-8">
+    <h2 class="mb-3 text-xs font-bold uppercase tracking-widest text-signal-700">{{ category }}</h2>
+    <div class="divide-y divide-slate-200 rounded-lg border border-slate-200">
+      {% for item in faq %}
+        {% if item.category == category %}
+          <details class="group px-4 py-3 open:bg-slate-50">
+            <summary class="cursor-pointer list-none font-medium text-slate-800 marker:content-none">
+              <span class="mr-2 inline-block text-signal-500 transition-transform group-open:rotate-90">&#9656;</span>
+              {{ item.question }}
+            </summary>
+            <p class="mt-2 pl-5 text-slate-600">{{ item.answer }}</p>
+          </details>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}

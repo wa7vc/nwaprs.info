@@ -1,0 +1,23 @@
+---
+title: Fill-In Digi
+permalink: /fill-in-digi/
+eleventyNavigation:
+  key: Fill-In Digi
+  parent: Station Configuration
+  order: 5
+intro: Configuration guidance for a lower-power, local-coverage fill-in digipeater.
+paramCaption: Suggested parameters for a fill-in digipeater
+paramTable:
+  - param: UNPROTO
+    value: "WIDE1-1"
+    note: Fill-in digipeaters typically only respond to the first hop, unlike mountaintop WIDEn-N digis.
+  - param: Typical placement
+    value: In-valley / low elevation
+    note: Complements WIDEn-N coverage by filling gaps for low-power mobiles and portables.
+notes:
+  - "A home station left on with WIDE1-1,WIDEn-N path handling effectively acts as a fill-in digi — a dedicated fill-in setup just formalizes and optimizes that role."
+  - "Fill-in digis are especially valuable in valleys and urban canyons where mountaintop digipeaters can't be heard directly."
+---
+<p>Fill-in digipeaters provide local, first-hop-only coverage in areas that can't reliably reach a mountaintop WIDEn-N digipeater — valleys, urban areas, and other RF-shadowed spots.</p>
+
+<p>See <a href="/widen-n-digipeater/" class="text-signal-600 underline underline-offset-2 hover:text-signal-500">WIDEn-N Digipeater</a> for the wide-area digipeater configuration this complements.</p>

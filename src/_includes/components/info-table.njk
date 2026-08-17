@@ -1,0 +1,32 @@
+{#
+  Renders a parameter/value table, e.g. TNC settings or beacon timing.
+  Usage: {% include "components/info-table.njk" %} with `rows` and
+  optional `caption` in scope (front matter: paramTable / beaconTable).
+#}
+<div class="overflow-x-auto rounded-lg border border-slate-200">
+  <table class="w-full min-w-[28rem] border-collapse text-left text-sm">
+    {% if caption %}
+      <caption class="bg-slate-50 px-4 py-2 text-left text-sm font-semibold text-slate-700 caption-top">
+        {{ caption }}
+      </caption>
+    {% endif %}
+    <thead>
+      <tr class="bg-night-950 text-white">
+        <th scope="col" class="px-4 py-2 text-xs font-bold uppercase tracking-widest">Parameter</th>
+        <th scope="col" class="px-4 py-2 text-xs font-bold uppercase tracking-widest">Value</th>
+        <th scope="col" class="px-4 py-2 text-xs font-bold uppercase tracking-widest">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr class="{{ 'bg-slate-50' if loop.index0 % 2 else 'bg-white' }}">
+          <td class="px-4 py-2 align-top font-medium text-slate-800">{{ row.param }}</td>
+          <td class="px-4 py-2 align-top">
+            <code class="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-sm text-slate-800">{{ row.value }}</code>
+          </td>
+          <td class="px-4 py-2 align-top text-slate-600">{{ row.note }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

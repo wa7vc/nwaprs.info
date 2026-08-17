@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/station-config.njk",
+  "tags": ["stationConfig"]
+}

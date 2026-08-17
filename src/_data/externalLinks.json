@@ -1,0 +1,57 @@
+[
+  {
+    "category": "APRS Applications",
+    "links": [
+      { "label": "APRSdos", "url": "ftp://ftp.tapr.org/aprssig/dosstuff/APRSdos", "description": "A DOS/Win3.x application with rudimentary maps. This is where it all started." },
+      { "label": "APRSdroid", "url": "http://aprsdroid.org", "description": "An APRS application for Android smartphones — excellent." },
+      { "label": "APRSpro", "url": "https://www.aprspro.com", "description": "An APRS application for iOS smartphones." },
+      { "label": "APRS.fi", "url": "https://www.aprs.fi", "description": "Along with Findu.com, the web face of APRS — look up any APRS station on a map." },
+      { "label": "DigiNed", "url": "http://www.qsl.net/digi_ned/", "description": "An application for running a WIDEn-N digipeater using the new-paradigm settings. No longer actively developed." },
+      { "label": "Findu.com", "url": "https://www.findu.com", "description": "Along with APRS.fi, the web face of APRS — look up any APRS station on a map." },
+      { "label": "PinPointAPRS", "url": "https://pinpointaprs.com", "description": "A Windows application, currently developed by Frank Watervoort, AB0WV — excellent." },
+      { "label": "SARTrack", "url": "https://www.sartrack.co.nz/", "description": "An APRS program from New Zealand tailored for Search and Rescue use. Very well done." },
+      { "label": "UI-View32", "url": "http://www.uiview.net", "description": "A Windows application supporting detailed Precision Maps. In its heyday, UI-View was the most popular APRS application, and it still runs on many Windows computers today." },
+      { "label": "Xastir", "url": "http://www.xastir.org", "description": "A Linux/Mac OS X application supporting unlimited commercial detailed map programs." },
+      { "label": "YAAC", "url": "https://www.ka2ddo.org/ka2ddo/YAAC.html", "description": "Yet Another APRS Client, for Windows, Linux, Raspbian, Mac OS X, and FreeBSD." }
+    ]
+  },
+  {
+    "category": "Additional APRS Resources",
+    "links": [
+      { "label": "APRS Applications Compared", "url": "http://www.eskimo.com/~archer/aprs_capabilities.html", "description": "A chart from Curt, WE7U, comparing the various APRS applications." },
+      { "label": "APRS-IS", "url": "http://www.aprs-is.net/", "description": "The APRS-Internet Service — how APRS position and message data gets around the internet." },
+      { "label": "APRS-IS and Weather Stations", "url": "http://www.qsl.net/k7jar/pages/Wx.html", "description": "Connect a weather station directly to the network and submit WX data via CWOP." },
+      { "label": "APRS via Satellites", "url": "http://web.usna.navy.mil/~bruninga/astars.html", "description": "Several satellites are configured for APRS digipeating." },
+      { "label": "Australia APRS Site", "url": "http://www.aprs.net.au/", "description": "A great website with lots of resources." },
+      { "label": "WB4APR APRS Site", "url": "http://web.usna.navy.mil/~bruninga/aprs.html", "description": "Bob Bruninga, WB4APR — known as \"Father Bob,\" the creator of APRS." },
+      { "label": "W3PGA APRS Site", "url": "http://www.w3pga.org/APRS.htm", "description": "Another great resource for APRS." },
+      { "label": "YouTube", "url": "https://www.youtube.com/results?search_query=nwaprs", "description": "A list of videos related to APRS and NWAPRS." }
+    ]
+  },
+  {
+    "category": "Hardware & Equipment",
+    "links": [
+      { "label": "AvMap", "url": "http://www.avmap.us", "description": "GeoSat G6 GPS — the best GPS solution for a Kenwood TM-D700 or D710. (The TM-D710G has GPS built in.)" },
+      { "label": "BigRedBee", "url": "http://www.bigredbee.com", "description": "Makes a miniature tracker package — pretty cool." },
+      { "label": "Byonics", "url": "http://www.byonics.com", "description": "Makes a variety of APRS trackers and other cool stuff." },
+      { "label": "Commercial Radio Mods", "url": "http://www.sedan.org/9600mods.htm", "description": "A great source of modifications for commercial radios." },
+      { "label": "Fix 144.39", "url": "http://web.usna.navy.mil/~bruninga/aprs/fix14439.html", "description": "Bob's detailed solution for fixing congestion on APRS." },
+      { "label": "GPS-710", "url": "http://www.greenlightlabs.com/gps-710/", "description": "Attaches to the rear of a Kenwood TM-D710. No frills, no display, $100 — a cool device from Green Light Labs." },
+      { "label": "Kenwood TM-D710", "url": "http://www.kenwoodusa.com/Communications/Amateur_Radio/Mobiles/TM-D710A", "description": "The best radio for APRS — a dual-band, APRS-compatible radio. The TM-D710G has GPS built in." },
+      { "label": "Lido Mounts", "url": "http://www.lidomounts.com/homepage.html", "description": "A great selection of mobile head and GPS mounting devices." },
+      { "label": "Mobile Power Monitor", "url": "http://www.windmonitor.net/apo/", "description": "Inserts between your battery and radio. When voltage drops to a set level, power to the radio is curtailed — though the battery won't be drained below a restart level." },
+      { "label": "NWAPRS Montana Tier 2 Server", "url": "http://montana.aprs2.net", "description": "The NWAPRS iGate server — use port 145.77." },
+      { "label": "OpenTracker", "url": "http://n1vg.net/opentracker/", "description": "Yet another TNC module with lots of features, from Scott, N1VG." },
+      { "label": "Radio-TNC Wiring Diagrams", "url": "http://www.buxcomm.com/wiring.htm", "description": "A good source of pinouts for radios and TNCs." },
+      { "label": "Red Cross Health & Welfare Messages", "url": "http://www.qso.com/satern411/emailfrm.htm", "description": "Send Red Cross health and welfare messages via e-mail." },
+      { "label": "Tigertronics TM-1 TNC", "url": "http://www.tigertronics.com", "description": "Tigertronics is one of our own, based in Medford, OR. They make a variety of APRS-related products." },
+      { "label": "TinyTrak3", "url": "http://www.byonics.com", "description": "A transmit-only miniature TNC, popular with lightweight trackers." },
+      { "label": "TinyTrak4", "url": "http://www.byonics.com/tinytrak4/", "description": "An upgraded mini-TNC with receive capability for APRS tracking, KISS TNC, digipeating, and fox hunting." },
+      { "label": "TNC-X", "url": "http://www.usmartdigi.com", "description": "The uSmartDigi project — an expandable TNC with firmware source code available. Digipeater and tracker daughterboards are available, with serial or USB interfaces." },
+      { "label": "UI-Digi", "url": "http://dxspots.com/fix14439_uidigi-rom.html", "description": "An alternate digipeater firmware with more features than a KPC-3 Plus, compatible with the new-paradigm n-N settings." },
+      { "label": "Winlink and Airmail", "url": "http://www.winlink2000.com", "description": "A modern HF/VHF email program for RF users, APRS compatible. Really cool." },
+      { "label": "Wiring Schematics", "url": "http://www.dididahdahdidit.com", "description": "A great site for wiring details and other APRS stuff." },
+      { "label": "Yaesu VX-8R", "url": "http://www.universal-radio.com/catalog/ht/0008.html", "description": "An APRS-compatible handheld. Also look for the Yaesu FT2DR, FT3DR, and FTM-400DR." }
+    ]
+  }
+]

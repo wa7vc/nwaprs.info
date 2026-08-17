@@ -1,0 +1,8 @@
+{#
+  Small "on the air" beacon indicator: a steady dot with a pulsing ring.
+  Usage: {% include "components/beacon-badge.njk" %}
+#}
+<span class="relative inline-flex h-2.5 w-2.5 shrink-0" aria-hidden="true">
+  <span class="absolute inline-flex h-full w-full rounded-full bg-beacon-500 animate-beacon-pulse"></span>
+  <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-beacon-400"></span>
+</span>

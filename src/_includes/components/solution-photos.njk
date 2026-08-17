@@ -1,0 +1,15 @@
+{#
+  Renders an optional photo strip for a solution category that doesn't use
+  Good/Better/Best tiers. Renders nothing if the list is empty.
+  Usage: {% import "components/solution-photos.njk" as solutionPhotos %}
+         {{ solutionPhotos.render(category.photos) }}
+#}
+{% macro render(items) %}
+  {% if items and items.length %}
+    <div class="mt-4 grid gap-3 sm:grid-cols-3">
+      {% for photo in items %}
+        <img src="{{ photo.src }}" alt="{{ photo.alt }}" class="w-full rounded-lg border border-slate-200 object-cover">
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}

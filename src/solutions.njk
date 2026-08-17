@@ -1,0 +1,57 @@
+---
+title: APRS Solutions
+permalink: /solutions/
+layout: layouts/page.njk
+eleventyNavigation:
+  key: APRS Solutions
+  order: 31
+intro: Good, better, and best equipment options for common APRS setups — plus a look at home stations and mountaintop digipeaters.
+portableTiers:
+  - tier: Good
+    title: Kenwood TH-D7A
+    description: Kenwood's original APRS-capable handheld. It requires pairing with an external GPS unit to transmit position reports.
+  - tier: Better
+    title: Kenwood TH-D72A
+    description: Adds a built-in GPS, so no external unit is needed — a big step up in convenience over the TH-D7A.
+  - tier: Best
+    title: Kenwood TH-D74A
+    description: Kenwood's flagship APRS handheld, with a built-in GPS and a more complete feature set. Production was discontinued in 2021 after a fire at Kenwood's chip plant in Japan, so used units now carry a premium. Yaesu (VX-8, FT3DR) and Alinco also make APRS-ready handhelds worth considering as alternatives.
+mobileTiers:
+  - tier: Good
+    title: Kenwood TM-D700A / TM-D710A
+    description: Dual-band mobile APRS radios. Neither has a built-in GPS, so you'll need to pair one with an external GPS unit, such as a Greenlight Labs GPS or an AvMap G6 APRS GPS with a 4" display.
+  - tier: Better
+    title: Yaesu FTM-300/FTM-400 or Alinco mobiles
+    description: Fully APRS-capable mobile radios from Yaesu and Alinco, offering an alternative to the Kenwood lineup.
+  - tier: Best
+    title: Kenwood TM-D710GA
+    description: Kenwood's latest mobile APRS radio, with a built-in GPS. Every APRS station received by the radio is plotted directly on its map display — about as complete a mobile solution as it gets.
+homeStationPhotos: []
+mountaintopPhotos: []
+---
+{% import "components/solution-tiers.njk" as solutionTiers %}
+{% import "components/solution-photos.njk" as solutionPhotos %}
+
+<section class="mb-10">
+  <h2 class="text-xs font-bold uppercase tracking-widest text-signal-700">Portable</h2>
+  <p class="mt-2 text-slate-700">Portable APRS stations are typically dual-band handheld radios paired with an integrated or external GPS. As you move up in capability, GPS becomes built in and the radio gets more full-featured.</p>
+  {{ solutionTiers.render(portableTiers) }}
+</section>
+
+<section class="mb-10">
+  <h2 class="text-xs font-bold uppercase tracking-widest text-signal-700">Mobile</h2>
+  <p class="mt-2 text-slate-700">Mobile APRS stations are typically dual-band radios installed in a vehicle. As with portables, built-in GPS is the main thing separating entry-level and flagship options.</p>
+  {{ solutionTiers.render(mobileTiers) }}
+</section>
+
+<section class="mb-10">
+  <h2 class="text-xs font-bold uppercase tracking-widest text-signal-700">Home Station</h2>
+  <p class="mt-2 text-slate-700">A home station can use practically any 2M or dual-band transceiver, paired with a Terminal Node Controller (TNC) to convert AX.25 packet data for your computer. Kantronics has long been the go-to manufacturer for APRS-focused TNCs, used both at mountaintop digipeater sites and on the desktop. Tune the radio to the US national simplex frequency, 144.390 MHz, connect it to a properly configured TNC, and run APRS software such as UI-View32, PinPointAPRS, Xastir, or SARTrack.</p>
+  {{ solutionPhotos.render(homeStationPhotos) }}
+</section>
+
+<section class="mb-10">
+  <h2 class="text-xs font-bold uppercase tracking-widest text-signal-700">Mountaintop Digipeater</h2>
+  <p class="mt-2 text-slate-700">For years, a typical mountaintop APRS digipeater was built from a 2M mobile radio (amateur or commercial), a Kantronics KPC-3 TNC, a power supply with backup power, a bandpass filter tuned to 144.390 MHz, coax, and a rugged 2M antenna capable of surviving harsh winter weather. Much of that equipment is still in use today, with the main addition being an internet connection so signals heard at the site can be uploaded to APRS-IS. One example is the Lookout Pass APRS digipeater, along I-90 at the Idaho/Montana state line. The site is owned by the Mac Pass Repeater Group (MPRG); initial work was completed by Bill, K7CTS (SK), Jim, WA7RVV (SK), and Dave, K7GPS. The site originally ran on a 2x6 ft solar panel until ground power was run the following year, and now has full-time utility power alongside a number of other amateur radio installations.</p>
+  {{ solutionPhotos.render(mountaintopPhotos) }}
+</section>

@@ -1,0 +1,35 @@
+---
+title: Home Station Settings
+permalink: /home-station-settings/
+eleventyNavigation:
+  key: Home Station Settings
+  parent: Station Configuration
+  order: 1
+intro: Recommended TNC and path settings for a fixed home station.
+paramCaption: Suggested TNC parameters for a fixed home station
+paramTable:
+  - param: UNPROTO
+    value: "WIDE2-2"
+    note: Standard path for fixed stations with a good vantage point.
+  - param: UNPROTO (fallback)
+    value: "WIDE1-1,WIDE2-1"
+    note: Use this instead if you can't reliably reach a WIDEn-N digipeater directly.
+  - param: BTEXT
+    value: "144.390MHz APRS"
+    note: Beacon comment text; keep it short and useful.
+beaconCaption: Recommended beacon intervals
+beaconTable:
+  - param: Position beacon
+    value: "Every 30 minutes"
+    note: Fixed stations don't move, so frequent beaconing just adds congestion.
+  - param: Weather beacon
+    value: "Every 15 minutes"
+    note: Only applicable if your station has an attached weather station.
+notes:
+  - "Never use WIDE2-2,WIDE1-1 — that ordering is a very bad path and causes excessive network traffic."
+  - "Use a basic packet program (not your APRS client) to write TNC configuration, to avoid config conflicts when the APRS software exits."
+  - "Leaving your TNC on lets your station also act as a fill-in digipeater for nearby low-power mobiles, using WIDE1-1,WIDEn-N."
+---
+<p>A fixed home station is one of the most valuable things you can add to the regional APRS network — a station that's on the air constantly, at a good elevation, with a well-behaved path configuration.</p>
+
+<p>This page covers the recommended TNC settings for a typical home station. If you're configuring a mobile or portable tracker instead, see <a href="/mobile-tracker-settings/" class="text-signal-600 underline underline-offset-2 hover:text-signal-500">Portable/Mobile Tracker Settings</a>.</p>

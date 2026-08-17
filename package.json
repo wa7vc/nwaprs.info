@@ -1,0 +1,24 @@
+{
+  "name": "nwaprs.info",
+  "version": "0.1.0",
+  "description": "Northwest APRS (NWAPRS) website",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n eleventy,tailwind -c blue,green \"npm:dev:eleventy\" \"npm:dev:css\"",
+    "dev:eleventy": "eleventy --serve --watch",
+    "dev:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css --watch",
+    "build": "eleventy && tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css --minify",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/press-start-2p": "^5.3.0",
+    "@fontsource/vt323": "^5.3.0",
+    "@tailwindcss/cli": "^4.3.3",
+    "concurrently": "^10.0.5",
+    "tailwindcss": "^4.3.3"
+  }
+}

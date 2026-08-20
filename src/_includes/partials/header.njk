@@ -8,31 +8,31 @@
     <button
       type="button"
       id="nav-toggle"
-      class="rounded border border-white/20 px-3 py-1.5 text-sm sm:hidden"
+      class="rounded border border-white/20 px-3 py-1.5 text-sm lg:hidden"
       aria-expanded="false"
       aria-controls="site-nav"
     >
       Menu
     </button>
 
-    <nav id="site-nav" aria-label="Primary" class="hidden w-full sm:block sm:w-auto">
-      <ul class="flex flex-col gap-1 py-3 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-1 sm:py-0">
+    <nav id="site-nav" aria-label="Primary" class="hidden w-full lg:block lg:w-auto">
+      <ul class="flex flex-col gap-1 py-3 text-sm lg:flex-row lg:flex-nowrap lg:items-center lg:gap-0.5 lg:py-0">
         {% for item in collections.all | eleventyNavigation %}
           <li class="relative">
             {% if item.children.length %}
               <details class="group/nav">
                 <summary
-                  class="flex cursor-pointer list-none items-center gap-1 rounded px-3 py-1.5 hover:bg-white/10 [&::-webkit-details-marker]:hidden marker:content-none {{ 'bg-white/10 text-signal-400' if item | navItemActive(page.url) }}"
+                  class="flex cursor-pointer list-none items-center gap-1 rounded px-3 py-1.5 hover:bg-white/10 [&::-webkit-details-marker]:hidden marker:content-none lg:px-2 lg:whitespace-nowrap {{ 'bg-white/10 text-signal-400' if item | navItemActive(page.url) }}"
                 >
                   {{ item.title }}
                   <span aria-hidden="true" class="text-[0.6rem] transition-transform group-open/nav:rotate-180">&#9662;</span>
                 </summary>
-                <ul class="mt-1 space-y-0.5 border-l border-white/10 pl-3 sm:absolute sm:left-0 sm:top-full sm:z-20 sm:mt-1 sm:w-64 sm:space-y-0 sm:rounded-lg sm:border sm:border-white/10 sm:bg-night-900 sm:py-1 sm:pl-0 sm:shadow-lg">
+                <ul class="mt-1 space-y-0.5 border-l border-white/10 pl-3 lg:absolute lg:left-0 lg:top-full lg:z-20 lg:mt-1 lg:w-64 lg:space-y-0 lg:rounded-lg lg:border lg:border-white/10 lg:bg-night-900 lg:py-1 lg:pl-0 lg:shadow-lg">
                   {% for child in item.children %}
                     <li>
                       <a
                         href="{{ child.url }}"
-                        class="block rounded px-3 py-1.5 hover:bg-white/10 sm:rounded-none sm:px-4 {{ 'text-signal-400' if child.url == page.url }}"
+                        class="block rounded px-3 py-1.5 hover:bg-white/10 lg:rounded-none lg:px-4 {{ 'text-signal-400' if child.url == page.url }}"
                         {{ 'aria-current="page"' | safe if child.url == page.url }}
                       >
                         {{ child.title }}
@@ -44,7 +44,7 @@
             {% else %}
               <a
                 href="{{ item.url }}"
-                class="block rounded px-3 py-1.5 hover:bg-white/10 {{ 'bg-white/10 text-signal-400' if item.url == page.url }}"
+                class="block rounded px-3 py-1.5 hover:bg-white/10 lg:px-2 lg:whitespace-nowrap {{ 'bg-white/10 text-signal-400' if item.url == page.url }}"
                 {{ 'aria-current="page"' | safe if item.url == page.url }}
               >
                 {{ item.title }}

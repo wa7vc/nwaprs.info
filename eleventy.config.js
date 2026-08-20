@@ -1,6 +1,12 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default function (eleventyConfig) {
+  eleventyConfig.setServerOptions({
+    host: "127.0.0.1",
+    showAllHosts: true, // Displays network IP addresses in the terminal
+    port: 8044
+  });
+
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addPassthroughCopy("src/assets/img");
